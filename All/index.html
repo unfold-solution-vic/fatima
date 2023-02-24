@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kanit&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:ital,wght@0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>MuslimXplore Prelaunch</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- navbar -->
+        <div class="nav-bg">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="Images/logo.png" alt="UnfoldSolutions">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link " aria-current="page" href="#">Features</a>
+                            <a class="nav-link" href="#">Prayer Times</a>
+                            <a class="nav-link" href="#">Hadith</a>
+                            <a class="nav-link" href="#">Career</a>
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </div>
+                        <button class="join-btn ml-auto">Join as Volunteer</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Content section -->
+        <section id="sectn" class="container d-flex">
+            <div class="d-flex flex-column content">
+                <h1>We are Working on a Free Muslim Xplore App</h1>
+                <p>Join the waiting list and be the first to know when we launch</p>
+                <button data-bs-target="#GetEmailModal" data-bs-toggle="modal">Get a Beta Version</button>
+            </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/muslimxplore.official/" target="_blank">
+                    <img src="Images/insta.png" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com/channel/UCdr7KyoclZ-5P5NDlOgP00A" target="_blank">
+                    <img src="Images/youtube.png" alt="youtube">
+                </a>
+                <a href="https://twitter.com/muslimxplore_o?s=20&t=gVHch5vOquaUHeez2HUQkA" target="_blank">
+                    <img src="Images/twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100086618334084" target="_blank">
+                    <img src="Images/facebook.png" alt="facebook">
+                </a>
+            </div>
+            <div id="images">
+                <img id="ils" src="Images/illustration.png" alt="">
+            </div>
+        </section>
+    </div>
+
+     <!-- Modal 1  -->
+     <div class="modal fade" id="GetEmailModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+     tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <p>Join the waiting list and be the first to know when we launch</p>
+                 <div id="div1">
+                     <label for="Email">Email</label>
+                     <input type="email" placeholder="example123@gmail.com">
+                     <label id="Device" for="Device">Device</label>
+                     <div>
+                         <label class="radio-button">
+                             <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                             <span class="radio-button__control"></span>
+                             <span class="radio-button__label">Andriod</span>
+                         </label>
+                         <label class="radio-button">
+                             <input type="radio" class="radio-button__input" id="choice1-2" name="choice1">
+                             <span class="radio-button__control"></span>
+                             <span class="radio-button__label">Iphone</span>
+                         </label>
+                     </div>
+                 </div>
+                 <button id="submit" data-bs-target="#Succes-Msg-modal" data-bs-toggle="modal">Submit</button>
+
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- Modal 2 -->
+ <div class="modal fade" id="Succes-Msg-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+     tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-body">
+                 <img  id="tck" src="Images/Success-tick.svg" alt="Submitted succesfully">
+                 <h1>Successfully submitted!</h1>
+                 <p>You will receive link to download within 24 hours</p>
+                 <img id="hr" src="Images/hr.png" alt="">
+                 <button data-bs-dismiss="modal">Okay</button>
+             </div>
+         </div>
+     </div>
+ </div>
+</body>
+</html>
