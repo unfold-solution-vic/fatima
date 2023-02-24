@@ -22,7 +22,9 @@ body {
     background-color: #ffffff;
     /* width:100%; */
 }
-
+.navbar-toggler{
+	border:none;
+}
 .navbar-brand {
     margin-right: 36px;
 }
@@ -616,7 +618,7 @@ input[type=radio] {
         width: 315px;
         height: 64px;
         border-radius: 47.1429px;
-        margin-bottom: 37px;
+        margin-bottom: 10px;
     }
 
     .icons {
@@ -628,6 +630,9 @@ input[type=radio] {
         text-align: center;
     }
 
+    .icons {
+        order: 0;
+    }
 
     .icons a img {
         padding-left: 21px;
